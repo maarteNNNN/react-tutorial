@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from './components/Button'
 
 class App extends Component {
   state = {
@@ -27,7 +28,12 @@ class App extends Component {
       return <li key={index}>{entry}</li>
     })
 
-    return <ul>{result}</ul>
+    return (
+      <div>
+        <ul>{result}</ul>
+        <Button />
+      </div>
+    )
   }
 }
 
